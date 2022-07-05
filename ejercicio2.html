@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+
+    <script>
+        inicio=['unacadena',3,9,1,10,500,1,10,true];
+     
+        let aux;
+    //ordenar el arreglo
+       for(let i = 0; i < inicio.length; i++){
+			for(j=i+1; j < inicio.length; j++){
+				if(inicio[i] < inicio[j]){
+					aux = inicio[i];
+					inicio[i] = inicio[j];
+					inicio[j] = aux;
+				}
+			}
+		}
+        //imprimir solo numeros
+        for(i=0;i<inicio.length;i++){
+            if((typeof(inicio[i])=="number")){
+                console.log(inicio[i])
+            }
+        }
+              
+    </script>
+    
+</body>
+</html>
